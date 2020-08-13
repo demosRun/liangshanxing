@@ -1,0 +1,92 @@
+<template lang="pug">
+.home
+  plug(_name="module98" _src="https://template.owo.ink/d998fae6830db2ac.owo")
+  //- 头图
+  img.main-image(src="@|bg.jpg|")
+  .w1000
+    .title.title-main 编者按
+    .editer.box
+      p 2005年8月15日，时任浙江省委书记习近平在安吉余村考察时强调：“我们过去讲既要绿水青山，又要金山银山，实际上绿水青山就是金山银山。”
+      p 今年是“两山论”提出15周年，“两山论”丰富发展成为习近平生态文明思想，中国的生态文明建设也取得了举世瞩目的成就。即日起，人民网环保频道拟推出“两山”理论15周年大型报道，共话生态文明、共建美丽中国。
+    plug.box(_name="module31" _src="https://template.owo.ink/c24bc89b17653863.owo")
+    //- 头部主标题
+    plug.box(_name="heard" _src="./src/module/heard.owo")
+    .lr-box.box.clear
+      .left.fl
+        plug(_name="module76" _src="https://template.owo.ink/f13325aa66a44cb4.owo")
+      .fr
+        //- 右侧列表
+        plug(_name="rightLineBox" _src="./src/module/rightLineBox.owo")
+    .title.box 高端访谈
+    .title.box 精彩评论
+    .pinglun-box.box
+      plug(_name="hoverEdit" _src="./src/module/hoverEdit.owo")
+    .title.box 图片连连看
+    //- 图片连连看
+    plug.box(_name="module148" _src="https://template.owo.ink/f6929718bbc993c3.owo")
+    .title.box 新闻全记录
+    .news-list-box.box.clear
+      plug.fl(_name="module72" _src="https://template.owo.ink/e65b7dcb25cc9b7b.owo")
+      plug.fr(_name="module72" _src="https://template.owo.ink/e65b7dcb25cc9b7b.owo")
+    .title.box 相关专题
+  //- 编者按
+  .edit-box
+    plug(_name="module2" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      console.log('ssssss')
+    }
+  }
+</script>
+
+
+<style lang="less">
+.box {
+  margin-top: 40px;
+}
+.edit-box {
+  margin-top: 40px;
+  background-color: #066094;
+  #copyright {
+    color: white;
+  }
+}
+.header1 {
+  position: fixed;
+  top: 0;
+}
+.main-image {
+  width: 100%;
+  display: block;
+  margin-top: 45px;
+}
+.title {
+  background-image: url('@|title-bg.png|');
+  line-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 336px center;
+  text-align: center;
+  font-size: 38px;
+  font-family: STSong;
+  color: #093b7a;
+  font-weight: bold;
+}
+.title-main {
+  background-image: url('@|main-title.png|');
+}
+.editer {
+  line-height: 38px;
+  font-size: 22px;
+  text-indent: 2em;
+  color: #416692;
+}
+.pinglun-box {
+  background-image: url('@|pinglun-bg.png|');
+  height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+</style>

@@ -1,0 +1,38 @@
+<template lang="pug">
+.heard
+  h1
+    a(href="#" target="_blank") 大标题大标题大标题大标题大标题大标题
+  p
+    a(href="#" target="_blank") 添动力 把教育作为贫困地区长远事业抓好兜底线
+    a(href="#" target="_blank") 不让一个孩子因贫失学强技能
+    a(href="#" target="_blank") 为贫困学子点燃出彩人生梦
+</template>
+
+
+<style lang="less">
+h1 {
+  text-align: center;
+  line-height: 70px;
+  font-size: 33px;
+  font-family: 'Microsoft YaHei';
+  margin-top: 20px;
+  color: #0e3e4b;
+  a {
+    color: #0e3e4b;
+  }
+}
+p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #286090;
+  a {
+    margin: 0 5px;
+    color: #286090;
+  }
+}
+a:hover {
+  color: #e60012;
+  text-decoration: none;
+}
+</style>

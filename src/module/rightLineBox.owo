@@ -1,0 +1,58 @@
+<template lang="pug">
+.right-line-box
+  h2
+    a(href="#" target="_blank") 大标题大标题大标题大标题大标题大标
+  ul
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+  .line
+  h2
+    a(href="#" target="_blank") 大标题大标题大标题大标题大标题大标
+  ul
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+    li
+      a(href="#" target="_blank") 文字内容文字内容文字内容文字内容文字内容
+</template>
+
+
+<style lang="less">
+.right-line-box {
+  width: 320px;
+}
+.line {
+  height: 1px;
+  background-color: #dddddd;
+  margin: 20px 0;
+}
+h2 {
+  height: 28px;
+  font-size: 26px;
+  line-height: 28px;
+  overflow: hidden;
+  font-family: 'Microsoft YaHei';
+  margin-bottom: 20px;
+  color: #056095;
+  a {
+    color: #056095;
+  }
+  a:hover {
+    color: #056095;
+  }
+}
+li, li a {
+  font-size: 16px;
+  color: black;
+  line-height: 34px;
+}
+</style>

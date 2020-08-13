@@ -1,0 +1,120 @@
+<template lang="pug">
+.hover-edit
+  //- 会自动生成
+  .edit-show
+  ul
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难2
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难3
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难4
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难5
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难6
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+    li
+      //- 会自动生成
+      .index
+      .edit
+        h1 人民日报：正确认识民营经济的发展困难7
+        p “我相信，只要我们坚持基本经济制度，落实好党和国家方针政策，民营经济就一定能够实现更大发展。”习近平总书记给广大民营企业家打气鼓劲，也对各级党委和政府提出了明确要求。认真学习贯彻习近平总书记重要讲话精神，深入研究解决民营企业、中小企业发展中遇到的困难，着力抓好6个方面政策举措落实，我国民营经济一定能够走向更加广阔的舞台，呈现更加旺盛的生机和活力。
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      const editList = this.queryAll('ul li')
+      for (let index = 0; index < editList.length; index++) {
+        const element = editList[index];
+        
+        element.getElementsByClassName('index')[0].innerText = index + 1
+        element.setAttribute('o-mouseover', `showIndex(${index})`)
+      }
+      this.showIndex(0)
+      setTimeout(() => {
+        this.handleEvent()
+      }, 100);
+    },
+    showIndex: function (index) {
+      const editList = this.queryAll('ul li')
+      this.query('.edit-show').innerHTML = editList[index].query('.edit').innerHTML
+      for (let index = 0; index < editList.length; index++) {
+        const element = editList[index];
+        element.classList.remove('active')
+      }
+      editList[index].classList.add('active')
+    }
+  }
+</script>
+
+<style lang="less">
+.hover-edit {
+  position: relative;
+}
+.edit {
+  display: none;
+}
+li {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #fee8b3;
+  font-size: 22px;
+  color: #bd873a;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+ul {
+  position: absolute;
+  right: 125px;
+  top: 35px;
+}
+.edit-show {
+  position: absolute;
+  left: 170px;
+  width: 600px;
+  top: 92px;
+  h1 {
+    line-height: 80px;
+  }
+  p {
+    font-size: 17px;
+    text-indent: 2em;
+    line-height: 1.7;
+    margin-top: 10px;
+  }
+}
+.active {
+  color: white;
+  background-color: #286090;
+}
+</style>

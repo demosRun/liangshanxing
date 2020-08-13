@@ -1,0 +1,550 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.header1 .w1000 {
+  width: 1000px;
+  margin: 0 auto;
+  height: 45px;
+}
+
+.header1 {
+  background: #fff;
+  height: 45px;
+  width: 100%;
+  z-index: 99;
+}
+
+.header1 .left {
+  float: left;
+  height: 45px;
+  width: 90px;
+  position: relative;
+}
+
+.header1 .left a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header1 .left img {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.header1 em {
+  float: right;
+  line-height: 45px;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.header1 em a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header1 em a:hover {
+  text-decoration: underline;
+}
+
+.header1 em,
+.header1 em a,
+.header1 em a:link,
+.header1 em a:visited,
+.header1 em a:hover {
+  color: #666;
+}
+.nav-bar {
+  max-width: 920px;
+  font-size: 18px;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 40px;
+  text-align: center;
+  background-color: #066094;
+}
+
+.nav-bar a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav-bar span {
+  margin: 10px 0;
+  border-left: 1px solid #ffffff;
+}
+
+.nav-bar a,
+.nav-bar span {
+  width: 116px;
+  color: white;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.nav-bar span:nth-child(1) {
+  border-left: none;
+}
+.heard h1 {
+  text-align: center;
+  line-height: 70px;
+  font-size: 33px;
+  font-family: 'Microsoft YaHei';
+  margin-top: 20px;
+  color: #0e3e4b;
+}
+
+.heard h1 a {
+  color: #0e3e4b;
+}
+
+.heard p {
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #286090;
+}
+
+.heard p a {
+  margin: 0 5px;
+  color: #286090;
+}
+
+.heard a:hover {
+  color: #e60012;
+  text-decoration: none;
+}
+.swiper-container-p2 {
+  position: relative;
+  width: 640px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.swiper-container-p2 .swiper-slide {
+  width: 640px;
+  height: 400px;
+  position: relative;
+}
+
+.swiper-container-p2 .swiper-slide a {
+  display: block;
+}
+
+.swiper-container-p2 .swiper-slide span {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 64px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  line-height: 64px;
+  font-size: 16px;
+}
+
+.swiper-container-p2 .prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  left: 70px;
+  z-index: 10;
+}
+
+.swiper-container-p2 .next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 18px;
+  right: 70px;
+  z-index: 10;
+}
+
+.swiper-container-p2 .swiper-pagination1 {
+  display: none;
+}
+
+.swiper-container-p2 .num1 {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  left: 15%;
+  bottom: 7px;
+  line-height: 200%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+.swiper-container-p2 .num1 i em {
+  color: #fff;
+  margin-left: 2px;
+}
+
+.swiper-container-p2 .num1 i em.thisp {
+  font-size: 28px;
+  color: #e71f18;
+  margin-right: 1px;
+  margin-left: 0;
+}
+.right-line-box {
+  width: 320px;
+}
+
+.right-line-box .line {
+  height: 1px;
+  background-color: #dddddd;
+  margin: 20px 0;
+}
+
+.right-line-box h2 {
+  height: 28px;
+  font-size: 26px;
+  line-height: 28px;
+  overflow: hidden;
+  font-family: 'Microsoft YaHei';
+  margin-bottom: 20px;
+  color: #056095;
+}
+
+.right-line-box h2 a {
+  color: #056095;
+}
+
+.right-line-box h2 a:hover {
+  color: #056095;
+}
+
+.right-line-box li,
+.right-line-box li a {
+  font-size: 16px;
+  color: black;
+  line-height: 34px;
+}
+.hover-edit {
+  position: relative;
+}
+
+.hover-edit .edit {
+  display: none;
+}
+
+.hover-edit li {
+  width: 75px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #fee8b3;
+  font-size: 22px;
+  color: #bd873a;
+  font-weight: bold;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.hover-edit ul {
+  position: absolute;
+  right: 125px;
+  top: 35px;
+}
+
+.hover-edit .edit-show {
+  position: absolute;
+  left: 170px;
+  width: 600px;
+  top: 92px;
+}
+
+.hover-edit .edit-show h1 {
+  line-height: 80px;
+}
+
+.hover-edit .edit-show p {
+  font-size: 17px;
+  text-indent: 2em;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.hover-edit .active {
+  color: white;
+  background-color: #286090;
+}
+.module148 {
+  position: relative;
+}
+
+.module148 .swiper-container-p3 {
+  position: relative;
+  width: 1000px;
+  height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: white;
+}
+
+.module148 .swiper-slide {
+  width: 1000px;
+  height: 550px;
+  position: relative;
+}
+
+.module148 .swiper-slide a {
+  display: block;
+}
+
+.module148 .swiper-slide span {
+  display: none;
+}
+
+.module148 .prev {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  left: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.module148 .next {
+  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  width: 18px;
+  height: 25px;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  top: 0;
+  right: 10px;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.module148 .swiper-pagination1 {
+  display: none;
+}
+
+.module148 .info-box {
+  position: absolute;
+  bottom: -10px;
+  background-color: #066094;
+  width: 600px;
+  height: 65px;
+  left: 30px;
+  right: 0;
+  margin: auto;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.module148 .info-box i {
+  position: absolute;
+  left: 0;
+  background-color: #ffe095;
+  padding: 5px 15px;
+  left: -30px;
+  color: #244882;
+}
+
+.module148 .info-item {
+  width: 500px;
+  height: 55px;
+  color: white;
+}
+
+.module148 .info-item h3 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.module148 .info-item p {
+  font-size: 14px;
+}
+.news-list {
+  width: 330px;
+}
+
+.news-list h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  color: #2c4a7c;
+  font-family: 'Microsoft YaHei';
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.news-list ul {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.news-list li {
+  font-size: 16px;
+  line-height: 32px;
+  list-style-type: none;
+}
+
+.news-list a {
+  color: #454545;
+  display: block;
+}
+#copyright {
+  height: 60px;
+  padding: 40px 0;
+  position: relative;
+  font-size: 14px;
+  height: 60px;
+  color: #000000;
+  z-index: 999;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  background-color: transparent;
+}
+.box {
+  margin-top: 40px;
+}
+
+.edit-box {
+  margin-top: 40px;
+  background-color: #066094;
+}
+
+.edit-box #copyright {
+  color: white;
+}
+
+.header1 {
+  position: fixed;
+  top: 0;
+}
+
+.main-image {
+  width: 100%;
+  display: block;
+  margin-top: 45px;
+}
+
+.title {
+  background-image: url('../resource/title-bg.png');
+  line-height: 60px;
+  background-repeat: no-repeat;
+  background-position: 336px center;
+  text-align: center;
+  font-size: 38px;
+  font-family: STSong;
+  color: #093b7a;
+  font-weight: bold;
+}
+
+.title-main {
+  background-image: url('../resource/main-title.png');
+}
+
+.editer {
+  line-height: 38px;
+  font-size: 22px;
+  text-indent: 2em;
+  color: #416692;
+}
+
+.pinglun-box {
+  background-image: url('../resource/pinglun-bg.png');
+  height: 420px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
