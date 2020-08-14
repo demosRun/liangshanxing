@@ -15,8 +15,8 @@
           <div class="info-item"><h3>中乌“合作—2019”联合反恐演练圆满结束</h3><p>文字内容文字内容文字内容文字内容文字内容文字内容</p></div>
         </div> 
       </div>
-      <div class="prev" o-tap="prev"></div> 
-      <div class="next" o-tap="next"></div>
+      <div class="prev" o-tap="prev" o-hover="grow"></div> 
+      <div class="next" o-tap="next" o-hover="grow"></div>
     </div>
     <div class="info-box">
       <i><em class="thisp">1</em>/<em class="allp"></em></i>
@@ -95,9 +95,9 @@
 }
 
 .prev {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  background: url('@|left.png|');
   width: 18px;
-  height: 25px;
+  height: 125px;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -105,16 +105,15 @@
   left: 10px;
   z-index: 10;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .next {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  background: url('@|right.png|');
   width: 18px;
-  height: 25px;
+  height: 125px;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -122,7 +121,6 @@
   right: 10px;
   z-index: 10;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;

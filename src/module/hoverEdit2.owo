@@ -1,0 +1,265 @@
+<template lang="pug">
+.hover-edit-2
+  ul
+    li
+      //- 会自动生成
+      .name 部委领导
+      .edit
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+    li
+      //- 会自动生成
+      .name 地方领导
+      .edit
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾2
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+    li
+      //- 会自动生成
+      .name 业内专家
+      .edit
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+        .card
+          img(src="@|people.png|")
+          h2 马化腾3
+          p 听了习总书记的讲话，大家信心更强了。
+          .more
+            a(href="#") 点击查看
+      li
+        //- 会自动生成
+        .name 企业代表
+        .edit
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+          .card
+            img(src="@|people.png|")
+            h2 马化腾4
+            p 听了习总书记的讲话，大家信心更强了。
+            .more
+              a(href="#") 点击查看
+  //- 会自动生成
+  .edit-show.clear.box
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      const editList = this.queryAll('ul li')
+      for (let index = 0; index < editList.length; index++) {
+        const element = editList[index];
+        const indexItem = element.getElementsByClassName('index')[0]
+        if (indexItem) {
+          indexItem.innerText = index + 1
+        }
+        
+        element.setAttribute('o-mouseover', `showIndex(${index})`)
+      }
+      this.showIndex(0)
+      setTimeout(() => {
+        this.handleEvent()
+      }, 100);
+    },
+    showIndex: function (index) {
+      const editList = this.queryAll('ul li')
+      this.query('.edit-show').innerHTML = editList[index].query('.edit').innerHTML
+      for (let index = 0; index < editList.length; index++) {
+        const element = editList[index];
+        element.classList.remove('active')
+      }
+      editList[index].classList.add('active')
+    }
+  }
+</script>
+
+<style lang="less">
+.hover-edit-2 {
+  position: relative;
+}
+.edit {
+  display: none;
+}
+li {
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #286090;
+  border: 1px solid #286090;
+  border-radius: 20px;
+  display: inline-block;
+}
+ul {
+  text-align: center;
+  margin: 20px 0;
+}
+.edit-show {
+  .card {
+    width: 253px;
+    float: left;
+    box-shadow: 1px 1px 5px #ccc;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 120px;
+    border-bottom: 5px solid #286090;
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-top: -112px;
+    }
+    h2 {
+      color: #333333;
+      line-height: 50px;
+      text-align: center;
+    }
+    .more {
+      width: 100px;
+      text-align: center;
+      line-height: 35px;
+      height: 35px;
+      background-color: #286090;
+      color: white;
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 15px;
+      a {
+        display: block;
+        color: white;
+      }
+    }
+    p {
+      height: 80px;
+    }
+  }
+}
+.active {
+  color: white;
+  background-color: #286090;
+}
+</style>

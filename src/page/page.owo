@@ -18,6 +18,7 @@
         //- 右侧列表
         plug(_name="rightLineBox" _src="./src/module/rightLineBox.owo")
     .title.box 高端访谈
+    plug.box(_name="hoverEdit2" _src="./src/module/hoverEdit2.owo")
     .title.box 精彩评论
     .pinglun-box.box
       plug(_name="hoverEdit" _src="./src/module/hoverEdit.owo")
@@ -29,6 +30,7 @@
       plug.fl(_name="module72" _src="https://template.owo.ink/e65b7dcb25cc9b7b.owo")
       plug.fr(_name="module72" _src="https://template.owo.ink/e65b7dcb25cc9b7b.owo")
     .title.box 相关专题
+    plug.box(_name="card3" _src="./src/module/card3.owo")
   //- 编者按
   .edit-box
     plug(_name="module2" _src="https://template.owo.ink/060579f0b4f1bcaa.owo")

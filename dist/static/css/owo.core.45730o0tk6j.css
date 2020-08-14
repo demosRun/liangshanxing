@@ -179,7 +179,18 @@ li {
 .heard a:hover {
   color: #e60012;
   text-decoration: none;
+}[o-hover="grow"] {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
+[o-hover="grow"]:hover, [o-hover="grow"]:focus, [o-hover="grow"]:active {
+  transform: scale(1.1);
+}
+
 .swiper-container-p2 {
   position: relative;
   width: 640px;
@@ -294,6 +305,80 @@ li {
   color: black;
   line-height: 34px;
 }
+.hover-edit-2 {
+  position: relative;
+}
+
+.hover-edit-2 .edit {
+  display: none;
+}
+
+.hover-edit-2 li {
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: #286090;
+  border: 1px solid #286090;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.hover-edit-2 ul {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.hover-edit-2 .edit-show .card {
+  width: 253px;
+  float: left;
+  box-shadow: 1px 1px 5px #ccc;
+  margin: 20px;
+  padding: 20px;
+  margin-top: 120px;
+  border-bottom: 5px solid #286090;
+}
+
+.hover-edit-2 .edit-show .card img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -112px;
+}
+
+.hover-edit-2 .edit-show .card h2 {
+  color: #333333;
+  line-height: 50px;
+  text-align: center;
+}
+
+.hover-edit-2 .edit-show .card .more {
+  width: 100px;
+  text-align: center;
+  line-height: 35px;
+  height: 35px;
+  background-color: #286090;
+  color: white;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.hover-edit-2 .edit-show .card .more a {
+  display: block;
+  color: white;
+}
+
+.hover-edit-2 .edit-show .card p {
+  height: 80px;
+}
+
+.hover-edit-2 .active {
+  color: white;
+  background-color: #286090;
+}
 .hover-edit {
   position: relative;
 }
@@ -343,6 +428,15 @@ li {
   color: white;
   background-color: #286090;
 }
+
+.hover-edit .index-box {
+  color: white;
+  position: absolute;
+  right: 230px;
+  top: 65px;
+  font-size: 30px;
+  letter-spacing: 6px;
+}
 .module148 {
   position: relative;
 }
@@ -371,9 +465,9 @@ li {
 }
 
 .module148 .prev {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_left_b.png);
+  background: url('../resource/left.png');
   width: 18px;
-  height: 25px;
+  height: 125px;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -381,16 +475,15 @@ li {
   left: 10px;
   z-index: 10;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .module148 .next {
-  background: url(http://www.people.com.cn/img/2016people/images/focus_right_b.png);
+  background: url('../resource/right.png');
   width: 18px;
-  height: 25px;
+  height: 125px;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -398,7 +491,6 @@ li {
   right: 10px;
   z-index: 10;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.8);
   padding: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -480,6 +572,32 @@ li {
 .news-list a {
   color: #454545;
   display: block;
+}
+.card-3 .card {
+  width: 300px;
+  float: left;
+}
+
+.card-3 .card img,
+.card-3 .card a {
+  display: block;
+}
+
+.card-3 .card img {
+  width: 300px;
+  height: 140px;
+}
+
+.card-3 .card p {
+  line-height: 40px;
+  text-align: center;
+  width: 100%;
+  color: #252525;
+  font-size: 16px;
+}
+
+.card-3 .cent {
+  margin: 0 50px;
 }
 #copyright {
   height: 60px;

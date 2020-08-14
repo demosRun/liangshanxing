@@ -1,0 +1,40 @@
+<template lang="pug">
+.card-3.clear
+  .card
+    a(href="#" target="_blank")
+      img(src="http://www.people.com.cn/NMediaFile/2020/0813/MAIN202008131710018667015504632.jpg")
+      p 标题标题标题
+  .card.cent
+    a(href="#" target="_blank")
+      img(src="http://www.people.com.cn/NMediaFile/2020/0813/MAIN202008131710018667015504632.jpg")
+      p 标题标题标题
+  .card
+    a(href="#" target="_blank")
+      img(src="http://www.people.com.cn/NMediaFile/2020/0813/MAIN202008131710018667015504632.jpg")
+      p 标题标题标题
+</template>
+
+
+<style lang="less">
+.card {
+  width: 300px;
+  float: left;
+  img, a {
+    display: block;
+  }
+  img {
+    width: 300px;
+    height: 140px;
+  }
+  p {
+    line-height: 40px;
+    text-align: center;
+    width: 100%;
+    color: #252525;
+    font-size: 16px;
+  }
+}
+.cent {
+  margin: 0 50px;
+}
+</style>

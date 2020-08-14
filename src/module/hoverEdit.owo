@@ -2,6 +2,7 @@
 .hover-edit
   //- 会自动生成
   .edit-show
+  .index-box
   ul
     li
       //- 会自动生成
@@ -69,6 +70,7 @@
         const element = editList[index];
         element.classList.remove('active')
       }
+      this.query('.index-box').innerText = (parseInt(index) + 1) + '/' + editList.length
       editList[index].classList.add('active')
     }
   }
@@ -116,5 +118,13 @@ ul {
 .active {
   color: white;
   background-color: #286090;
+}
+.index-box {
+  color: white;
+  position: absolute;
+  right: 230px;
+  top: 65px;
+  font-size: 30px;
+  letter-spacing: 6px;
 }
 </style>
